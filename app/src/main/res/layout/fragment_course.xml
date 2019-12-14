@@ -20,10 +20,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_title" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_course_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -40,59 +40,193 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView_recent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:orientation="horizontal"
+        android:scrollbars="none"
+        android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_recent">
 
-        <Button
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingRight="18dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recent">
 
-            android:id="@+id/imageBtnComputerScience"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:background="@drawable/course_button"
-            android:drawableBottom="@drawable/ic_science"
-            android:paddingTop="10dp"
-            android:paddingBottom="30dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:backgroundTint="#ffcccc"
-            android:layout_marginRight="5dp"
-            android:text="Computer Science"
-            android:textSize="12sp">
+            <Button
 
-        </Button>
+                android:id="@+id/imageBtnComputerScience"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/course_button"
+                android:backgroundTint="#ffcccc"
+                android:drawableBottom="@drawable/ic_science"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                android:text="Computer Science"
+                android:textSize="12sp">
 
-        <Button
+            </Button>
 
-            android:id="@+id/imageBtnComputerScience2"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:background="@drawable/course_button"
-            android:drawableBottom="@drawable/ic_science"
-            android:paddingTop="10dp"
-            android:paddingBottom="30dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:layout_marginRight="5dp"
-            android:backgroundTint="#99ccff"
-            android:text="Computer Science"
-            android:textSize="12sp">
+            <Button
 
-        </Button>
+                android:id="@+id/imageBtnAI"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/course_button"
+                android:backgroundTint="#99ccff"
+                android:drawableBottom="@drawable/ic_science"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                android:text="Artificial Intelligence"
+                android:textSize="12sp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="WHAT'S HOT"
+        android:textSize="12sp"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView_recent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_course"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingRight="18dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recent">
+
+            <Button
+
+                android:id="@+id/imageBtnComputerScience1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/course_button"
+                android:backgroundTint="#ffcccc"
+                android:drawableBottom="@drawable/ic_science"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                android:text="Computer Science"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/imageBtnAI1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/course_button"
+                android:backgroundTint="#99ccff"
+                android:drawableBottom="@drawable/ic_science"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                android:text="Artificial Intelligence"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/imageBtnLogic1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/course_button"
+                android:backgroundTint="#7075ff"
+                android:drawableBottom="@drawable/ic_science"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                android:text="Logic"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/imageBtnBusiness"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/course_button"
+                android:backgroundTint="#84ff70"
+                android:drawableBottom="@drawable/ic_science"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                android:text="Business"
+                android:textSize="12sp">
+
+            </Button>
 
 
+        </LinearLayout>
 
+    </HorizontalScrollView>
 
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_content_navigation"
+    app:startDestination="@id/computerScienceFragment">
+
+    <fragment
+        android:id="@+id/computerScienceFragment"
+        android:name="com.example.test.ui.course.courseContent.ui.computerscience.ComputerScienceFragment"
+        android:label="ComputerScienceFragment"
+        tools:layout="@layout/computer_science_fragment"/>
+    <fragment
+        android:id="@+id/course_page"
+        android:name="com.example.test.course_page"
+        android:label="fragment_course_page"
+        tools:layout="@layout/fragment_course_page" />
+</navigation>

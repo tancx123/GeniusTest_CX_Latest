@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.course.courseContent.ComputerScience"></activity>
+        <activity android:name=".CourseContent" />
+        <activity android:name=".Course_Content" />
+        <activity android:name=".course_content" />
         <activity
             android:name=".MainActivity"
             android:label="@string/genius">
@@ -18,11 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-
     </application>
 
 </manifest>

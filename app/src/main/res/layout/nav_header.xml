@@ -12,5 +12,5 @@
         android:contentDescription="@string/genius"
         android:layout_width="250dp"
         android:layout_height="80dp"
-        android:src="@drawable/genius" />
+        android:src="@drawable/ic_quiz" />
 </LinearLayout>
