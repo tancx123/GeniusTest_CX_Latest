@@ -2,11 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/computerscience"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.computerscience.ComputerScienceFragment">
-
+    tools:context=".ui.course.courseContent.ComputerScience">
 
     <ImageView
         android:id="@+id/imageViewBinary"
@@ -39,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageViewBinary" />
 
     <TextView
-        android:id="@+id/message"
+        android:id="@+id/textView_TopicContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -56,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_TopicTitle" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnNextTopic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -67,11 +65,11 @@
         android:background="@android:color/holo_blue_light"
         android:gravity="center"
         android:padding="15dp"
-        android:text="Continue"
+        android:text="Next Topic"
         android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_TopicContent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.course.courseContent.ComputerScience"></activity>
+        <activity android:name=".ui.course.courseContent.LogicGates"></activity>
+        <activity android:name=".ui.course.courseContent.ComputerScience" />
         <activity android:name=".CourseContent" />
         <activity android:name=".Course_Content" />
         <activity android:name=".course_content" />

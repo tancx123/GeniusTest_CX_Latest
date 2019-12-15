@@ -1,20 +1,28 @@
 package com.example.test.ui.course.courseContent
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.example.test.R
-import com.example.test.ui.course.courseContent.ui.computerscience.ComputerScienceFragment
 
 class ComputerScience : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.computer_science_activity)
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.container, ComputerScienceFragment.newInstance())
-                .commitNow()
-        }
-    }
+        setContentView(R.layout.activity_computer_science)
 
+
+        val btnNextTopic = findViewById<Button>(R.id.btnNextTopic)
+
+        btnNextTopic.setOnClickListener {
+
+            val intent = Intent(this, LogicGates ::class.java)
+            startActivity(intent)
+
+        }
+
+
+
+    }
 }
