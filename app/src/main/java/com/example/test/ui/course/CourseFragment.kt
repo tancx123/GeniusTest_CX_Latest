@@ -12,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.test.CourseContent
 import com.example.test.R
+import com.example.test.ui.tutor.TutorCourse
 import kotlinx.android.synthetic.main.fragment_course.view.*
 
 class CourseFragment : Fragment() {
@@ -35,6 +36,11 @@ class CourseFragment : Fragment() {
 
         view.imageBtnComputerScience1.setOnClickListener {
             val intent = Intent(activity, CourseContent ::class.java)
+            startActivity(intent)
+        }
+
+        view.imageBtnAI.setOnClickListener {
+            val intent = Intent(activity, TutorCourse ::class.java)
             startActivity(intent)
         }
 

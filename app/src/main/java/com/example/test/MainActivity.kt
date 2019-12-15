@@ -90,7 +90,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         if (drawer.isDrawerOpen(GravityCompat.START)) {
+
             drawer.closeDrawer(GravityCompat.START)
+
         } else {
             val builder = AlertDialog.Builder(this,R.style.AlertDialogCustom)
 
