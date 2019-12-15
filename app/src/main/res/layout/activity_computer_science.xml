@@ -10,7 +10,7 @@
         android:id="@+id/imageViewBinary"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/ic_science"
+        android:src="@drawable/ic_binary"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

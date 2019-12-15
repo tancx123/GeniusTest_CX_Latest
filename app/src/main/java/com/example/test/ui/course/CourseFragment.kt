@@ -27,7 +27,13 @@ class CourseFragment : Fragment() {
             ViewModelProviders.of(this).get(CourseViewModel::class.java)
         val view = inflater.inflate(R.layout.fragment_course, container, false)
 
+
         view.imageBtnComputerScience.setOnClickListener {
+            val intent = Intent(activity, CourseContent ::class.java)
+            startActivity(intent)
+        }
+
+        view.imageBtnComputerScience1.setOnClickListener {
             val intent = Intent(activity, CourseContent ::class.java)
             startActivity(intent)
         }
