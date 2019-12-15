@@ -39,5 +39,6 @@ class CourseFragment : Fragment() {
         }
 
         return view
+
     }
 }
