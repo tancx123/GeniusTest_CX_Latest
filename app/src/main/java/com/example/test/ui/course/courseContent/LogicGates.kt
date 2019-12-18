@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.test.R
+import com.example.test.ui.tutor.Tutor
 import com.example.test.ui.tutor.TutorCourse
 import kotlinx.android.synthetic.main.activity_add_course.view.*
 
@@ -18,7 +19,7 @@ class LogicGates : AppCompatActivity() {
 
         btnTesting.setOnClickListener {
 
-            val intent = Intent(this, TutorCourse::class.java )
+            val intent = Intent(this, Tutor::class.java )
             startActivity(intent)
 
         }
