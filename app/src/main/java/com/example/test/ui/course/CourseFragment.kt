@@ -39,11 +39,6 @@ class CourseFragment : Fragment() {
             startActivity(intent)
         }
 
-        view.imageBtnAI.setOnClickListener {
-            val intent = Intent(activity, TutorCourse ::class.java)
-            startActivity(intent)
-        }
-
         return view
 
     }
