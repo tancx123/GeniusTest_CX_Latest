@@ -21,10 +21,10 @@ class AddCourse : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         positionSpinner.adapter = adapter*/
 
-        sp = findViewById<Spinner>(R.id.spnTopicCover)
+        /*sp = findViewById<Spinner>(R.id.spnTopicCover)
         val topicCovered = arrayOf("Binary", "Logic")
         val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1, topicCovered)
-        sp.adapter = adapter
+        sp.adapter = adapter*/
 
     }
 }
