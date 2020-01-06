@@ -29,10 +29,10 @@ class CourseFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_course, container, false)
 
 
-        view.imageBtnComputerScience.setOnClickListener {
+       /* view.imageBtnComputerScience.setOnClickListener {
             val intent = Intent(activity, CourseContent ::class.java)
             startActivity(intent)
-        }
+        }*/
 
         view.imageBtnComputerScience1.setOnClickListener {
             val intent = Intent(activity, CourseContent ::class.java)

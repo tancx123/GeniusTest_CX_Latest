@@ -41,80 +41,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView_recent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:scrollbars="none"
-        android:fillViewport="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_recent">
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:paddingRight="18dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_recent">
-
-            <Button
-
-                android:id="@+id/imageBtnComputerScience"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/course_button"
-                android:backgroundTint="#ffcccc"
-                android:drawableBottom="@drawable/ic_science"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="30dp"
-                android:text="Computer Science"
-                android:textSize="12sp">
-
-            </Button>
-
-            <Button
-
-                android:id="@+id/imageBtnAI"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/course_button"
-                android:backgroundTint="#99ccff"
-                android:drawableBottom="@drawable/ic_ai"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="30dp"
-                android:text="Artificial Intelligence"
-                android:textSize="12sp">
-
-            </Button>
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
-
     <TextView
         android:id="@+id/tv_course"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="WHAT'S HOT"
@@ -122,7 +55,7 @@
         app:fontFamily="@font/roboto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView_recent" />
+        app:layout_constraintTop_toBottomOf="@+id/list_view" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView_course"
@@ -227,6 +160,19 @@
         </LinearLayout>
 
     </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

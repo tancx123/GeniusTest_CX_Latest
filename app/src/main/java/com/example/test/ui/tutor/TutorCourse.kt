@@ -74,8 +74,12 @@ class TutorCourse : Fragment() {
                     val dialog = delBuilder.create()
                     dialog.show()
                 }
+
+
             }
 
+            val dialog = builder.create()
+            dialog.show()
         }
 
         return view
